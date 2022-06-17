@@ -6,13 +6,14 @@ import { PageShowcases } from './pages/PageShowcases';
 import { PageMembersInfo } from './pages/members/PageMembersInfo';
 import { PageMembersEdward } from './pages/members/PageMembersEdward';
 import { PageMembersTom } from './pages/members/PageMembersTom';
+import { PageMembersDima } from './pages/members/PageMembersDima';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
 import { Separator } from './components/Separator';
 
 function App() {
 	return (
 		<div className="App">
-			<h1>Web Team 001</h1>
+			<h1>Web Team IT-Rex</h1>
 			<nav className="navMain">
 			<NavLink className="navlink" to="/welcome">Welcome</NavLink><Separator/> 
 			<NavLink to="/members">Members</NavLink><Separator/>
@@ -34,6 +35,10 @@ function App() {
 					<Route
 						path="/members/tom/*"
 						element={<PageMembersTom />}
+					></Route>
+          <Route
+						path="/members/dima/*"
+						element={<PageMembersDima />}
 					></Route>
 				</Route>
 				<Route path="/research" element={<PageResearch />} />
