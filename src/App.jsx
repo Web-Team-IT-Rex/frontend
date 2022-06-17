@@ -9,6 +9,7 @@ import { PageMembersTom } from './pages/members/PageMembersTom';
 import { PageMembersFelix } from './pages/members/PageMembersFelix';
 import { PageMembersDima } from './pages/members/PageMembersDima';
 import { PageMembersAlecu } from './pages/members/PageMembersAlecu';
+import { PageMembersMeryem } from './pages/members/PageMembersMeryem';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
 import { Separator } from './components/Separator';
 
@@ -54,6 +55,10 @@ function App() {
 					<Route
 						path="/members/felix/*"
 						element={<PageMembersFelix />}
+					></Route>
+					<Route
+						path="/members/meryem/*"
+						element={<PageMembersMeryem />}
 					></Route>
 				</Route>
 				<Route path="/research" element={<PageResearch />} />
