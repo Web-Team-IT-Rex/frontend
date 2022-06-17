@@ -5,6 +5,7 @@ import { PageResearch } from './pages/PageResearch';
 import { PageShowcases } from './pages/PageShowcases';
 import { PageMembersInfo } from './pages/members/PageMembersInfo';
 import { PageMembersEdward } from './pages/members/PageMembersEdward';
+import { PageMembersTom } from './pages/members/PageMembersTom';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
 import { Separator } from './components/Separator';
 
@@ -29,6 +30,10 @@ function App() {
 					<Route
 						path="/members/edward/*"
 						element={<PageMembersEdward />}
+					></Route>
+					<Route
+						path="/members/tom/*"
+						element={<PageMembersTom />}
 					></Route>
 				</Route>
 				<Route path="/research" element={<PageResearch />} />
