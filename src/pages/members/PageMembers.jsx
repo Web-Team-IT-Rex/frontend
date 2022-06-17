@@ -10,10 +10,12 @@ export const PageMembers = () => {
 				<NavLink to="edward">Edward</NavLink>
 				<Separator />
 				<NavLink to="tom">Tom</NavLink>
-        <Separator />
+				<Separator />
 				<NavLink to="felix">Felix</NavLink>
-        <Separator />
+				<Separator />
 				<NavLink to="dima">Dima</NavLink>
+				<Separator />
+				<NavLink to="alecu">Alecu</NavLink>
 			</nav>
 			<Outlet />
 		</div>
