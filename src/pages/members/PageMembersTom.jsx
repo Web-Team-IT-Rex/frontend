@@ -6,6 +6,7 @@ export const PageMembersTom = () => {
 				<li>cheerio.js</li>
 				<li>chart.js</li>
 				<li>examples of custom hooks</li>
+				<li>build in custom useContext</li>
 			</ul>
 		</>
 	);
