@@ -45,6 +45,7 @@ function App() {
 						path="/members/felix/*"
 						element={<PageMembersFelix />}
          ></Route>
+        </Route>
 				<Route path="/research" element={<PageResearch />} />
 				<Route path="/showcases" element={<PageShowcases />} />
 				<Route path="/" element={<Navigate to="/welcome" replace />} />
