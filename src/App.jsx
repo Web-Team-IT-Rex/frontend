@@ -6,6 +6,7 @@ import { PageShowcases } from './pages/PageShowcases';
 import { PageMembersInfo } from './pages/members/PageMembersInfo';
 import { PageMembersEdward } from './pages/members/PageMembersEdward';
 import { PageMembersTom } from './pages/members/PageMembersTom';
+import { PageMembersFelix } from './pages/members/PageMembersFelix';
 import { PageMembersDima } from './pages/members/PageMembersDima';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
 import { Separator } from './components/Separator';
@@ -39,8 +40,11 @@ function App() {
           <Route
 						path="/members/dima/*"
 						element={<PageMembersDima />}
-					></Route>
-				</Route>
+          ></Route>
+         <Route
+						path="/members/felix/*"
+						element={<PageMembersFelix />}
+         ></Route>
 				<Route path="/research" element={<PageResearch />} />
 				<Route path="/showcases" element={<PageShowcases />} />
 				<Route path="/" element={<Navigate to="/welcome" replace />} />
