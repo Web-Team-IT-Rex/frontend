@@ -9,6 +9,7 @@
     "sc": "git log --pretty=format:\"%h - %ad - %s\" --date=format:\"%Y-%m-%d %H:%M:%S\""
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
