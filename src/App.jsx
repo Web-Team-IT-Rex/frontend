@@ -12,11 +12,15 @@ import { PageMembersAlecu } from './pages/members/PageMembersAlecu';
 import { PageMembersMeryem } from './pages/members/PageMembersMeryem';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
 import { Separator } from './components/Separator';
+import { useContext } from 'react';
+import { AppContext } from './AppContext'; 
 
 function App() {
+	const { siteTitle } = useContext(AppContext);
+
 	return (
 		<div className="App">
-			<h1>Web Team IT-Rex</h1>
+			<h1>{siteTitle}</h1>
 			<nav className="navMain">
 				<NavLink className="navlink" to="/welcome">
 					Welcome
