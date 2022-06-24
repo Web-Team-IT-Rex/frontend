@@ -10,10 +10,11 @@ import { PageMembersFelix } from './pages/members/PageMembersFelix';
 import { PageMembersDima } from './pages/members/PageMembersDima';
 import { PageMembersAlecu } from './pages/members/PageMembersAlecu';
 import { PageMembersMeryem } from './pages/members/PageMembersMeryem';
+import { PageMembersDawid } from './pages/members/PageMembersDawid';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
 import { Separator } from './components/Separator';
 import { useContext } from 'react';
-import { AppContext } from './AppContext'; 
+import { AppContext } from './AppContext';
 
 function App() {
 	const { siteTitle } = useContext(AppContext);
@@ -63,6 +64,10 @@ function App() {
 					<Route
 						path="/members/meryem/*"
 						element={<PageMembersMeryem />}
+					></Route>
+					<Route
+						path="/members/dawid/*"
+						element={<PageMembersDawid />}
 					></Route>
 				</Route>
 				<Route path="/research" element={<PageResearch />} />
