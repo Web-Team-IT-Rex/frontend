@@ -16,6 +16,8 @@ export const PageMembers = () => {
 				<NavLink to="dima">Dima</NavLink>
 				<Separator />
 				<NavLink to="alecu">Alecu</NavLink>
+				<Separator />
+				<NavLink to="meryem">Meryem</NavLink>
 			</nav>
 			<Outlet />
 		</div>
